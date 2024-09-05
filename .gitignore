@@ -38,3 +38,4 @@ out/
 env.shireEnv.json
 $output
 .shire-output
+.shire-cache
