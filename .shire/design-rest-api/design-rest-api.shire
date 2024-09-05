@@ -1,0 +1,14 @@
+---
+name: "设计 RESTful API"
+variables:
+  "story": /any/ { thread(".shire/shell/dify-epic-story.curl.sh") | jsonpath("$.answer", true) }
+onStreamingEnd: { parseCode | saveFile | openFile }
+---
+
+你是一个资深的开发人员，根据用户故事设计 RESTful API。
+
+用户故事：
+
+$story
+
+请使用 Markdown CodeBlock 与表格形式根据用户故事设计 RESTful API，返回设计的 API。
