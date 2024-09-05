@@ -5,7 +5,7 @@ variables:
   "controllers": /.*.java/ { cat | grep("class\s+([a-zA-Z]*Controller)")  }
   "services": /.*.java/ { cat | grep("class\s+([a-zA-Z]*Service)")  }
   "firstController": /CinemaController\.java/ { print }
-  "firstService": /CinemaController\.java/ { print }
+  "firstService": /CinemaService\.java/ { print }
   "domainLanguage": /domain-language\.csv/ { cat }
 onStreamingEnd: { parseCode | openFile }
 ---
