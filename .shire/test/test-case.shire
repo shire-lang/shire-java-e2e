@@ -1,11 +1,10 @@
 ---
-name: "生成单元测试用例"
+name: "修改 API 测试"
 actionLocation: ContextMenu
-interaction: AppendCursorStream
-onStreamingEnd: { parseCode | saveFile($filePath) | runCode }
+onStreamingEnd: { parseCode | patch($filePath, $output) }
 ---
 
-你是一个资深的单元测试专家，请根据如下的需求，生成单元测试用例。
+你是一个资深的单元测试专家，请使用 diff patch 的方式生成 API 测试用例。
 
 我的需求是：
 
@@ -23,4 +22,4 @@ $all
 
 $underTestMethodCode
 
-请返回修改完的完整的测试用例代码，只返回代码。
+请只返回 diff patch，不做任务解释，方便我直接使用。
