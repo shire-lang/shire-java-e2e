@@ -1,0 +1,26 @@
+---
+name: "生成单元测试用例"
+actionLocation: ContextMenu
+interaction: AppendCursorStream
+onStreamingEnd: { parseCode | saveFile($filePath) | runCode }
+---
+
+你是一个资深的单元测试专家，请根据如下的需求，生成单元测试用例。
+
+我的需求是：
+
+$selection
+
+当前的代码是：
+
+路径：
+
+$filePath
+
+$all
+
+被测试代码是：
+
+$underTestMethodCode
+
+请返回修改完的完整的测试用例代码，只返回代码。
