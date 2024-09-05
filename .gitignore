@@ -39,3 +39,4 @@ env.shireEnv.json
 $output
 .shire-output
 .shire-cache
+docs/api.yml
