@@ -1,5 +1,5 @@
 ---
-name: "结合需求修改代码"
+name: "更新 Controller 代码"
 variables:
   "controllerCode": /any/ { cat($output) }
   "outputFile": /any/ { print($output) }

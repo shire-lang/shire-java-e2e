@@ -1,5 +1,5 @@
 ---
-name: "更新 Controller 代码"
+name: "分析需求，选择合适的代码文件"
 variables:
   "story": /any/ { thread(".shire/shell/dify-user-story-workflow.curl.sh") | jsonpath("$.answer", true) }
   "controllers": /.*.java/ { cat | grep("class\s+([a-zA-Z]*Controller)")  }
@@ -7,7 +7,7 @@ variables:
   "domainLanguage": /domain-language\.csv/ { cat }
 afterStreaming: {
   case condition {
-    default { execute("modify-code.shire", $story, $output) }
+    default { execute("modify-controller.shire", $story, $output) }
   }
 }
 ---
