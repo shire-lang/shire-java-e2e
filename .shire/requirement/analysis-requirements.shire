@@ -1,9 +1,9 @@
 ---
-name: "寻找代码变更点"
+name: "更新 Controller 代码"
 variables:
   "story": /any/ { thread(".shire/shell/dify-user-story-workflow.curl.sh") | jsonpath("$.answer", true) }
   "controllers": /.*.java/ { cat | grep("class\s+([a-zA-Z]*Controller)")  }
-  "firstController": /BlogController\.java/ { print }
+  "firstController": /CinemaController\.java/ { print }
   "domainLanguage": /domain-language\.csv/ { cat }
 afterStreaming: {
   case condition {
@@ -34,6 +34,4 @@ $firstController
 
 你只返回文件名，诸如：src/main/xxx/DemoController.java
 
-请严格按格式返回，只返回文件路径。
-
-
+请严格按格式返回，只返回文件路径，不要包含其他内容。
