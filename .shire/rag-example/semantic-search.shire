@@ -6,7 +6,7 @@ variables:
   "lang": "java"
 afterStreaming: {
     case condition {
-      default { searching($output, "0.1") | execute("SummaryQuestion.shire", $output, $input, $lang) }
+      default { searching($output, "0.1") | execute("summary-question.shire", $output, $input, $lang) }
     }
  }
 ---
