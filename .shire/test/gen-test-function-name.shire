@@ -1,0 +1,25 @@
+---
+name: "生成测试用例名称"
+actionLocation: ContextMenu
+onStreamingEnd: { parseCode | patch($filePath, $output) }
+---
+
+你是一个资深的单元测试专家，请根据测试用例生成对应的空的 Java 测试方法，使用 diff patch 表示方便我直接使用。
+
+我的需求是：
+
+$selection
+
+当前的代码是：
+
+路径：
+
+$filePath
+
+$all
+
+被测试代码是：
+
+$underTestMethodCode
+
+请根据测试用例生成对应的空的 Java 测试方法，只返回 diff patch 表示方便我直接使用。

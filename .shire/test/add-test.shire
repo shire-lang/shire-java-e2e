@@ -1,5 +1,5 @@
 ---
-name: "修改 API 测试"
+name: "修改测试"
 actionLocation: ContextMenu
 onStreamingEnd: { parseCode | patch($filePath, $output) }
 ---
