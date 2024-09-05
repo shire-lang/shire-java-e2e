@@ -40,6 +40,8 @@ service 示例路径在：
 
 $firstService
 
-你只返回文件名，格式如：`src/main/xxx/DemoController.java`
+你最后只返回文件名，使用 markdown block 返回，如：
 
-请严格按格式返回，只返回存在的代码文件，只返回文件路径。
+```
+src/main/xxx/DemoController.java
+```
