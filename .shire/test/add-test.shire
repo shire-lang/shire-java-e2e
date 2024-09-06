@@ -12,11 +12,11 @@ $selection
 
 当前的代码是：
 
+$all
+
 路径：
 
 $filePath
-
-$all
 
 被测试代码是：
 

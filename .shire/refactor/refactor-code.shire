@@ -1,0 +1,17 @@
+---
+name: "重构代码"
+actionLocation: ContextMenu
+onStreamingEnd: { parseCode | diff($filePath, $output) }
+---
+
+你是一个资深的开发人员，请使用 diff patch 重构代码。
+
+当前的代码路径：
+
+$filePath
+
+待重构的代码：
+
+$all
+
+请只返回 diff patch，不做任务解释，方便我直接使用。
