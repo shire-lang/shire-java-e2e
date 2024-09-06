@@ -1,10 +1,12 @@
 ---
 name: "设计数据库"
 variables:
-  "story": /any/ { thread(".shire/shell/dify-epic-story.curl.sh") | jsonpath("$.answer", true) }
+  "storyList": "作为购物中心电影观众，我想要提前预订电影场次相关的食物，以便于节省购买食物的时间，更好地安排观影时间。"
+  "story": "添加零食和饮料至购物车影院观众在购票时添加零食和饮料提前准备好观影期间的零食和饮料"
+  "requirement": /any/ { thread(".shire/shell/dify-epic-story.curl.sh") | jsonpath("$.answer", true) }
 afterStreaming: {
   case condition {
-    default { execute("gen-sql.shire", $story, $output) }
+    default { execute("gen-sql.shire", $requirement, $output) }
   }
 }
 ---
@@ -24,6 +26,6 @@ For example:
 
 Here are the User requirements:
 
-$story
+$requirement
 
 Please choose the best Tables for the user, just return the table names in a list, no explain.

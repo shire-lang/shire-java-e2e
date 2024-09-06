@@ -7,11 +7,11 @@ onStreamingEnd: { parseCode | saveFile | openFile }
 
 需求：
 
-$story
+$requirement
 
-表信息：
+数据库相关信息：
 
-$tableInfo
+$databaseInfo
 
 要求如下：
 
