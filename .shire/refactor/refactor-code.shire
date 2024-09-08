@@ -14,4 +14,8 @@ $filePath
 
 $all
 
+Sonarlint 检测结果：
+
+$sonarIssue
+
 请只返回 diff patch，不做任务解释，方便我直接使用。

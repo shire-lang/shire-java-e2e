@@ -1,6 +1,8 @@
 ---
-name: "修改测试"
+name: "添加测试"
 actionLocation: ContextMenu
+variables:
+  "sourceCode": /any/ { print($filePath) | sed("src/test/", "src/main/") | sed("Test.java", ".java") | print }
 onStreamingEnd: { parseCode | patch($filePath, $output) }
 ---
 
@@ -20,6 +22,6 @@ $filePath
 
 被测试代码是：
 
-$underTestMethodCode
+$sourceCode
 
 请只返回 diff patch，不做任务解释，方便我直接使用。
