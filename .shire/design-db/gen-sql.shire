@@ -1,5 +1,7 @@
 ---
 name: "生成数据库"
+variables:
+  "relatedTable": /any/ { column($output) }
 onStreamingEnd: { parseCode | saveFile | openFile }
 ---
 
@@ -11,7 +13,7 @@ $requirement
 
 数据库相关信息：
 
-$databaseInfo
+$relatedTable
 
 要求如下：
 
