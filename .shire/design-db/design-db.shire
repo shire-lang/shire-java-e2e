@@ -26,6 +26,6 @@ For example:
 
 Here are the User requirements:
 
-$requirements
+$requirement
 
 Please choose the best Tables for the user, just return the table names in a list, no explain.
