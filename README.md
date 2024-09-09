@@ -2,12 +2,14 @@
 
 ## 说明
 
-- 需求生成代码: analysis-requirements.shire
-- 需求生成测试: test-case.shire
-- 生成 SQL 设计：design-db.shire
+- 生成 SQL：design-db.shire
 - 生成 API 设计：design-rest-api.shire
 - 定位代码变更: located-file.shire
 - RAG 示例: semantic-search.shire
+- 重构代码：refactor-code.shire
+- 需求生成代码: requirement/analysis-requirements.shire
+- 需求生成测试: test/test-case.shire
+- 生成测试用例名称: test/gen-test-function-name.shire
 
 ## Setup
 
