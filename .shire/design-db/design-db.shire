@@ -26,6 +26,6 @@ For example:
 
 Here are the User requirements:
 
-$requirement
+根据系统 id 获取所有的包
 
 Please choose the best Tables for the user, just return the table names in a list, no explain.
