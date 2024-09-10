@@ -1,5 +1,5 @@
 ---
-name: "生成数据库"
+name: "生成 SQL"
 variables:
   "relatedTable": /any/ { column($output) }
 onStreamingEnd: { parseCode | saveFile | openFile }
