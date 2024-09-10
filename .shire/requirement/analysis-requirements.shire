@@ -7,7 +7,7 @@ variables:
   "domainLanguage": /domain-language\.csv/ { cat }
 afterStreaming: {
   case condition {
-    default { parseCode | execute("modify-controller.shire", $story, $output) }
+    default { execute("modify-controller.shire", $story, $output) }
   }
 }
 ---
