@@ -12,14 +12,10 @@ $selection
 
 当前的代码是：
 
+$all
+
 路径：
 
 $filePath
-
-$all
-
-被测试代码是：
-
-$underTestMethodCode
 
 请根据测试用例生成对应的空的 Java 测试方法，只返回 diff patch 表示方便我直接使用。
