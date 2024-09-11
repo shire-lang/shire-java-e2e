@@ -5,7 +5,7 @@ variables:
 onStreamingEnd: { parseCode | saveFile | openFile }
 ---
 
-根据如下的需求，对原文件的代码进行修改。
+根据如下的需求，生成 SQL。
 
 需求：
 
