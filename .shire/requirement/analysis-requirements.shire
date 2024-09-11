@@ -32,6 +32,10 @@ $domainLanguage
 
 $firstController
 
-你只返回文件名，诸如：src/main/xxx/DemoController.java
+你只返回文件名，诸如：
+
+```
+src/main/xxx/DemoController.java
+```
 
 请严格按格式返回，只返回文件路径，不要包含其他内容。
